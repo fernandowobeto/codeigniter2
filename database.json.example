@@ -1,0 +1,8 @@
+{
+    "dbdriver": "postgre",
+    "hostname": "",
+    "port": "",
+    "username": "",
+    "password": "",
+    "database": ""
+}

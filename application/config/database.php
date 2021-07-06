@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 /*
 | -------------------------------------------------------------------
 | DATABASE CONNECTIVITY SETTINGS
@@ -63,6 +63,17 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
+if (file_exists(__DIR__ . '/../../database.json')) {
+    $config = json_decode(file_get_contents(__DIR__ . '/../../database.json'));
+
+    $db['default']['dbdriver'] = $config->dbdriver;
+    $db['default']['hostname'] = $config->hostname;
+    $db['default']['port'] = $config->port;
+    $db['default']['username'] = $config->username;
+    $db['default']['password'] = $config->password;
+    $db['default']['database'] = $config->database;
+}
 
 
 /* End of file database.php */
