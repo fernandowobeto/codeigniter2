@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/app.css'); ?>">
 </head>
 <body>
 <div class="container-fluid">
-        <?php echo $content;?>
+    <?php echo $content; ?>
 </div>
 </body>
 </html>
