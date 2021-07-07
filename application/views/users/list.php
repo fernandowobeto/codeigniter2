@@ -6,7 +6,7 @@
                 <th>Código</th>
                 <th>Login</th>
                 <th>E-mail</th>
-                <th colspan="2">#</th>
+                <th colspan="2" class="text-center">#</th>
             </tr>
             </thead>
             <tbody>
@@ -15,12 +15,12 @@
                 <td><?php echo $user->codigo;?></td>
                 <td><?php echo $user->login;?></td>
                 <td><?php echo $user->email;?></td>
-                <td>
+                <td class="text-center">
                     <a href="<?php echo site_url("users/form/{$user->codigo}");?>">
                         <i class="icon-edit"></i>
                     </a>
                 </td>
-                <td>
+                <td class="text-center">
                     <a href="<?php echo site_url("users/delete/{$user->codigo}");?>">
                         <i class="icon-remove"></i>
                     </a>
